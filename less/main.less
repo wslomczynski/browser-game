@@ -1,0 +1,54 @@
+// out: ../css/main.css, sourcemap: true, compress: true
+
+@page_width: 1000px;
+@page_height: 738px;
+@top-bar_height: 70px;
+@top-bar_background-color: #369;
+@footer-bar_background-color: #369;
+@top-bar_color: #fff;
+@game_height: 620px;
+@game_background-color: #fff;
+@footer-bar_heigth: 48px;
+
+body {
+  margin: 0;
+
+}
+
+#page{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: @page_width;
+  height: @page_height;
+}
+
+#top-bar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: @page_width;
+  height: @top-bar_height;
+  background-color: @top-bar_background-color;
+  color: @top-bar_color;
+}
+
+#game{
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: @page_width;
+  height: @game_height;
+  background-color: @game_background-color;
+  clip:auto;
+  overflow: hidden;
+}
+
+#footer-bar{
+  position: absolute;
+  left: 0;
+  top: 690px;
+  width: @page_width;
+  height: @footer-bar_heigth;
+  background-color: @footer-bar_background-color;
+}
